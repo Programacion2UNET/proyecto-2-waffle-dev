@@ -311,3 +311,30 @@ body#registroTorneoPage{
 	background-image: url('../images/fondo.jpg');
 	background-size: 100% 100vh;
 }
+
+.registroTorneo{
+	width: 100%;
+	height: 100vh	;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.registroTorneoMain__form{
+	margin: 50px;
+}
+
+.registroTorneoMain__form__item {
+	margin: 25px;
+}
+
+.labelCategoria{
+	text-align: center;
+}
+
+.categoria{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
