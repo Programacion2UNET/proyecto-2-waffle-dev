@@ -69,7 +69,14 @@ $_SESSION['idEquipo'] = $idEquipo;
 			  					<?= $registros[$i]->GetCantParticipantes()?>
 			  				</td>
 			  				<td>
-			  					<?= $registros[$i]->GetCategoria()?>
+			  					<?php 
+			  						if($registros[$i]->GetCategoria() == 1)
+			  							echo 'Principiante';
+			  						else if($registros[$i]->GetCategoria() == 2)
+			  							echo 'Aficionado';
+			  						else 
+			  							echo 'Profesional';
+			  					?>
 			  				</td>
 			  			</tr>
 
