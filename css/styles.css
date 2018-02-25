@@ -1,0 +1,313 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color:white;
+	font-family: 'Krona One', sans-serif;
+}
+
+body#homePage{
+	background-image: url('../images/fondo.jpg');
+}
+
+/*Home Page*/
+
+.home{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Krona One', sans-serif;
+	text-shadow: 2px 2px #ccc;
+}
+
+.home__title{
+	font-size: 4em;
+}
+
+.home__opciones{
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.home__opciones a{
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	transition: 1s;
+}
+
+.home__opciones a:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.home__footer{
+	text-align: center;
+	font-size: .9em;
+	text-shadow: none;
+	margin-top: 50px;
+}
+
+@media only screen and  (max-width: 1080px) {
+    .home__title{
+		font-size: 2.8em;
+	}
+}
+
+@media only screen and  (max-width: 800px) {
+    .home__title{
+		font-size: 2em;
+	}
+	.home__opciones a{
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and  (max-width: 530px) {
+    .home__title{
+		text-align: center;
+	}
+}
+
+
+/*Login Page*/
+
+body#loginPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100% 100vh;
+}
+
+.login{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Krona One', sans-serif;
+}
+
+.login header>h1.titulo{
+	font-size: 2.5em;
+	text-shadow: 2px 2px #ccc;
+}
+
+.login header>h2.subtitulo{
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 2px 2px #ccc;
+}
+
+.loginMain__form{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.loginMain__form__item{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+.loginMain__form__item>label{
+	margin-top: 10px;
+}
+
+.form__input{
+	padding: 10px;
+	width: 50%;
+	border: none;
+	border-radius: 20px;
+	font-family: 'Krona One', sans-serif;
+	font-size: .7em;
+}
+
+.i1{
+	margin-left: 20px;
+}
+
+.form__btn{
+	width: 150px;
+	padding: 12px;
+		border: 4px solid  #333;
+	border-radius: 20px;
+	font-family: 'Krona One', sans-serif;
+	font-size: .8em;
+	background: white;
+	color: #333;
+
+}
+
+.form__btn:hover{
+	cursor: pointer;
+}
+
+.loginMain__enlaces a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 25px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	transition: 1s;
+}
+
+.loginMain__enlaces a:hover{
+	cursor: pointer;
+}
+
+@media only screen and  (max-width: 800px) {
+    .login header>h1.titulo{
+		font-size: 2em;
+	}
+	.login header>h2.subtitulo{
+		font-size: 1.6em;
+	}
+	.loginMain__form__item{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.form__input{
+		margin: 10px;
+		width: 80%;
+	}
+	.loginMain__enlaces a{
+		font-size: .9em;
+	}
+
+}
+
+@media only screen and  (max-width: 800px) {
+    .login header>h1.titulo{
+		font-size: 1.8em;
+		text-align: center;
+	}
+}
+
+/*Sign Up*/
+
+body#signUpPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100% 100vh;
+}
+
+.signUp{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.signUp header>h1{
+	font-size: 2.5em;
+	text-shadow: 2px 2px #ccc;
+}
+
+.signUp header>h2{
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 2px 2px #ccc;
+}
+
+.registroMain__form{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px black;
+}
+
+.form__data{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.registroMain__form__item{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.registroMain__form__item label{
+	padding: 10px;	
+}
+
+.registroMain__form .form__btn{
+	margin-top: 20px;
+}
+
+.registroMain__enlaces a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 25px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	transition: 1s;
+
+}
+
+.registroMain__enlaces a:hover{
+	cursor: pointer;
+}
+
+@media only screen and  (max-width: 800px) {
+	body{
+		height: 100%;
+	    background-attachment: fixed;
+    	background-size: cover;
+	}
+    .signUp header>h1{
+		font-size: 2em;
+	}
+	.registroMain__form{
+		width: 100%;
+	}
+	.form__data{
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and  (max-width: 800px) {
+	.signUp header>h1{
+		font-size: 1.8em;
+		text-align: center;
+	}
+	.signUp header>h2{
+		font-size: 1.4em;
+	}
+}
+
+/*Registro Torneo*/
+
+body#registroTorneoPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100% 100vh;
+}
