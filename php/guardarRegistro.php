@@ -29,6 +29,6 @@ $dataSend= $consulta->execute([
 
 
 if($dataSend)
-    header("location:../views/listadoTorneos.php");
+    header('location:../views/listadoTorneos.php?idTorneo='.$idTorneo.'&idEquipo='.$idEquipo);
 else
     header("location:../views/registroTorneo.php");

@@ -345,3 +345,29 @@ body#listadoTorneosPage{
 	background-image: url('../images/fondo.jpg');
 	background-size: 100% 100vh;
 }
+
+.listadoTorneos{
+	width: 100%;
+	height: 100vh	;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*Admin Panel*/
+
+body#adminPanelPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100% 100vh;
+}
+
+.adminPanel{
+	width: 100%;
+	height: 100vh	;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

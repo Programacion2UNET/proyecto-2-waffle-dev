@@ -23,8 +23,10 @@ $id=$filas[0][0];
 
 //$_SESSION['id-u']= $filas[0][0];
 
-if($filas)
-	header('location:../views/registroTorneo.php?id='.$id);  
+if($filas && $filas[0][3] == 0)
+	header('location:../views/registroTorneo.php?id='.$id);
+else if($filas && $filas[0][3] == 1)
+	header('location:../views/adminPanel.php');
 else
 	header("location:../views/Login.html"); 
 

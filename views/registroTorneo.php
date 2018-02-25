@@ -3,7 +3,13 @@
 require_once('../php/obtenerTorneos.php');
 $idTorneo = 1;
 
-$idEquipo = $_GET['id'];
+
+session_start();
+
+if(isset($_GET['id']))
+	$idEquipo = $_GET['id'];
+else
+	$idEquipo = $_SESSION['idEquipo'];
 
 ?>
 

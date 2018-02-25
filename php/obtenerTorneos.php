@@ -2,7 +2,6 @@
 
 include('../torneo.php');
 
-session_start();
 
 require_once('conexionDB.php');
 
