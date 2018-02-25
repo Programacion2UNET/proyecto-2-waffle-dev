@@ -11,14 +11,7 @@ $password= $_POST["password"];
 $admin=0;
 
 
-$conexion= null;
-$consulta= null;
-
-//conexión con la base de datos
-
-$conexion= new PDO('mysql:host=localhost; dbname=SistemaTorneosDeportivos', 'root',''); 
-
-$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+require_once('conexionDB.php');
 
 $query= "INSERT INTO equipos (nombre_equipo, shortname_equipo, fecha_equipo, direccion_equipo, email_equipo, web_equipo, user_equipo, password_equipo ,admin) VALUES (:nombre, :shortname, :fecha, :direccion, :email, :web, :user, :password, :admin)";
 
