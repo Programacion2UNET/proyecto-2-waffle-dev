@@ -3,8 +3,9 @@
 $idTorneo = $_POST['nombreTorneo'];
 $cantParticipantes = $_POST['cantParticipantes'];
 $nivel = $_POST['categoria'];
-$idRegistro = $_POST['idRegistro']+1;
+$idRegistro = $_POST['idRegistro'];
 
+//echo $idRegistro;
 
 
 if($nivel === 'principiante')

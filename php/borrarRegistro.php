@@ -1,8 +1,9 @@
 <?php
 
-$idRegistro = $_POST['id-for']+1;
+$idRegistro = $_POST['id-for'];
 
 //echo $idRegistro;
+
 
 
 require_once('conexionDB.php');

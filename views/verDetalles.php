@@ -3,6 +3,7 @@ require_once('../php/obtenerRegistros.php');
 require_once('../php/obtenerEquipos.php');
 require_once('../php/obtenerTorneos.php');
 $idRegistro = $_POST['id-for'];
+//echo $idRegistro;
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +74,7 @@ $idRegistro = $_POST['id-for'];
 			        <button type="submit">Editar</button>
 			      </form>
 			      <form action="../php/borrarRegistro.php" method="POST">
-			        <input class="id-for" type="hidden" name="id-for" id="id-for" value=<?= $registros[$idRegistro]->GetId()-1; ?> /> 
+			        <input class="id-for" type="hidden" name="id-for" id="id-for" value=<?= $registros[$idRegistro]->GetId(); ?> /> 
 			        <button type="submit">Borrar</button>
 			      </form>
 			</div>
