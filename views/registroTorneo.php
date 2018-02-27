@@ -6,10 +6,15 @@ $idTorneo = 1;
 
 session_start();
 
+/*
 if(isset($_GET['id']))
 	$idEquipo = $_GET['id'];
 else
 	$idEquipo = $_SESSION['idEquipo'];
+*/
+
+if(isset($_SESSION['id-user']))
+	$idEquipo = $_SESSION['id-user'];
 
 ?>
 

@@ -21,14 +21,15 @@ $filas= $consulta->fetchAll();
 //print_r($filas[0][0]);
 $id=$filas[0][0];
 
+$_SESSION['id-user'] = $id;
 //$_SESSION['id-u']= $filas[0][0];
 
 if($filas && $filas[0][3] == 0)
-	header('location:../views/registroTorneo.php?id='.$id);
+	header('location:../views/registroTorneo.php?');
 else if($filas && $filas[0][3] == 1)
 	header('location:../views/adminPanel.php');
 else
-	header("location:../views/Login.html"); 
+	header("location:../views/Login.php"); 
 
 $filas= null;
 $conexion=null;

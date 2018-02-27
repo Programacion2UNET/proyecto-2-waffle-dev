@@ -30,6 +30,6 @@ $dataSend= $data->execute(array(
 ));
 
 if($dataSend)
-    header("location:../views/Login.html");
+    header("location:../views/Login.php");
 else
-    header("location:../views/SignUp.html");
+    header("location:../views/SignUp.php");
