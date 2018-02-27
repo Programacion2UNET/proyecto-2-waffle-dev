@@ -1,0 +1,64 @@
+
+/*Home Page*/
+
+.home{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Krona One', sans-serif;
+	text-shadow: 2px 2px #ccc;
+}
+
+.home__title{
+	font-size: 4em;
+}
+
+.home__opciones{
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.home__opciones a{
+	color: white;
+	text-decoration: none;
+	font-size: 2em;
+	transition: 1s;
+}
+
+.home__opciones a:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.home__footer{
+	text-align: center;
+	font-size: .9em;
+	text-shadow: none;
+	margin-top: 50px;
+}
+
+@media only screen and  (max-width: 1080px) {
+    .home__title{
+		font-size: 2.8em;
+	}
+}
+
+@media only screen and  (max-width: 800px) {
+    .home__title{
+		font-size: 2em;
+	}
+	.home__opciones a{
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and  (max-width: 530px) {
+    .home__title{
+		text-align: center;
+	}
+}

@@ -1,0 +1,61 @@
+
+
+/*Crear Torneo*/
+
+
+body#crearTorneoPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100% 100vh;
+}
+
+.crearTorneo{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px black;
+}
+
+.crearTorneo h2{
+	text-align: center;
+}
+
+.crearTorneo__main .form__btn{
+	margin-top: 10px;	
+}
+
+.crearTorneo__main label{
+	font-size: 1.2em;
+}
+
+.crearTorneo__main .enlaces{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.crearTorneo__main .enlaces a{
+	text-decoration: none;
+	text-shadow: none;
+	text-align: center;
+}
+
+.crearTorneo__main__form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin-bottom: 15px;
+}
+
+.form__data{
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	justify-content: space-around;
+	margin: 10px;
+}
+

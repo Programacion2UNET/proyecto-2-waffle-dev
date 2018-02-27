@@ -1,0 +1,113 @@
+
+/*Sign Up*/
+
+body#signUpPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100vw 100%;
+	overflow-x: hidden;
+}
+
+.signUp{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.signUp header>h1{
+	font-size: 2.5em;
+	text-shadow: 2px 2px #ccc;
+}
+
+.signUp header>h2{
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 2px 2px #ccc;
+}
+.registroMain{
+	width: 100%;
+}
+.registroMain__form{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px black;
+}
+
+.registroMain__form input{
+	width: 80%;
+}
+
+.form__data{
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-around;
+}
+
+.registroMain__form__item{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.registroMain__form__item label{
+	padding: 10px;	
+}
+
+.registroMain__form .form__btn{
+	margin-top: 20px;
+}
+
+.registroMain__enlaces a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 25px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	transition: 1s;
+	margin-bottom: 10px;
+
+}
+
+.registroMain__enlaces a:hover{
+	cursor: pointer;
+}
+
+@media only screen and  (max-width: 800px) {
+	body{
+		height: 100%;
+	    background-attachment: fixed;
+    	background-size: cover;
+	}
+    .signUp header>h1{
+		font-size: 2em;
+	}
+	.registroMain__form{
+		width: 100%;
+	}
+	.form__data{
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and  (max-width: 800px) {
+	.signUp header>h1{
+		font-size: 1.8em;
+		text-align: center;
+	}
+	.signUp header>h2{
+		font-size: 1.4em;
+	}
+}

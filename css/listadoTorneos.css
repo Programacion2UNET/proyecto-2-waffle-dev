@@ -1,0 +1,64 @@
+
+
+/*Listado Torneos*/
+body#listadoTorneosPage{
+	background-image: url('../images/fondo.jpg');
+	background-size: 100% 100vh;
+}
+
+.listadoTorneos{
+	width: 100%;
+	height: 100vh	;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.listadoTorneos h1{
+	text-shadow: 2px 2px #333;
+}
+
+.listadoTorneos__main .enlaces{
+	display: flex;
+	width: 100vw;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.listadoTorneos__main .enlaces .form__btn{
+	width: 200px;
+	text-align: center;
+
+}
+.listadoTorneos__main .enlaces .form__btn:last-child{
+	font-size: 1.1em; 	
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+.listadoTorneos__main .enlaces a{
+	text-decoration: none;
+}
+
+.listadoTorneos__main__table{
+
+	text-shadow: 2px 2px #333;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(51, 51, 51, 0.8);
+
+}
+
+.listadoTorneos__main__table th{
+	padding-top: 20px;
+}
+
+.listadoTorneos__main__table tr, td{
+	padding: 20px;	
+	z-index: 1;
+}
+
+.listadoTorneos__main__table{
+	text-align: center;
+}
