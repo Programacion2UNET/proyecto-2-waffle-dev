@@ -48,7 +48,7 @@ require_once('cabecera.php');
 				</div>
 				<div class="registroTorneoMain__form__item">
 					<label for="cant_participantes">Cantidad de Participantes</label>
-					<input type="number" id="cantParticipantes" placeholder="Cantidad de Participantes" value="<?php echo $registros[$idRegistro]->GetCantParticipantes()?>" min="5" name="cantParticipantes">
+					<input type="number" id="cantParticipantes" placeholder="Cantidad de Participantes" value="<?php echo $registros[$idRegistro]->GetCantParticipantes()?>" min="5" name="cantParticipantes" max="15">
 				</div>
 				<div class="registroTorneoMain__form__item"">
 

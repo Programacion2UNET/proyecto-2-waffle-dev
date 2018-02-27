@@ -14,7 +14,7 @@ require_once('cabecera.php');
 
                 <div class="form__data">
                   <label for="">Nombre del Torneo</label>
-                  <input type="text" name="nombreTorneo" placeholder="Nombre del Torneo">
+                  <input type="text" name="nombreTorneo" placeholder="Nombre del Torneo" required />
                 </div>
 
                 <div class="form__data">
