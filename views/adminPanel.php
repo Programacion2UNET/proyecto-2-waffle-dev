@@ -19,7 +19,7 @@ require_once('../php/obtenerTorneos.php');
 	<div class="adminPanel">
 			
 		<h1 class="adminPanel__titulo">Admin Panel</h1>
-
+		<h3>Equipos registrados</h3>
 		<main class="adminPanel__main">
 			<table style="width:100%" class="adminPanel__main__table">
 			  <tr>
@@ -101,6 +101,8 @@ require_once('../php/obtenerTorneos.php');
 
 
 			<div class="enlaces">
+				<a href="verTorneos.php">Ver Torneos</a>
+				<a href="crearTorneo.php">Crear Torneo</a>
 				<a href="../index.html">Salir</a>
 			</div>
 		</main>
