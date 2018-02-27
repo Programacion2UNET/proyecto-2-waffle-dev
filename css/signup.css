@@ -18,13 +18,13 @@ body#signUpPage{
 
 .signUp header>h1{
 	font-size: 2.5em;
-	text-shadow: 2px 2px #ccc;
+	text-shadow: 2px 2px #333;
 }
 
 .signUp header>h2{
 	text-align: center;
 	font-size: 2em;
-	text-shadow: 2px 2px #ccc;
+	text-shadow: 2px 2px #333;
 }
 .registroMain{
 	width: 100%;
