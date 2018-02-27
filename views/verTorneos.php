@@ -12,7 +12,7 @@ require_once('../php/obtenerTorneos.php');
 	<link rel="stylesheet" href="../css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
 </head>
-<body id="adminPanelPage">
+<body id="verTorneosPage">
 	
 	<div class="adminPanel">
 			
@@ -48,10 +48,10 @@ require_once('../php/obtenerTorneos.php');
 			</table>
 
 
-			<div class="enlaces">
-				<a href="adminPanel.php">Regresar</a>
-				<a href="crearTorneo.php">Crear Torneo</a>
-				<a href="../index.html">Salir</a>
+			<div class="enlaces verTorneosEnlaces">
+				<a href="adminPanel.php" class="button-panel">Regresar</a>
+				<a href="crearTorneo.php" class="button-panel">Crear Torneo</a>
+				<a href="../index.html" class="button-panel">Salir</a>
 			</div>
 		</main>
 

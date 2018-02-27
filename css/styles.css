@@ -8,6 +8,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	color:white;
+	width: 100vw;
 	font-family: 'Krona One', sans-serif;
 }
 
@@ -143,7 +144,7 @@ body#loginPage{
 .form__btn{
 	width: 150px;
 	padding: 12px;
-		border: 4px solid  #333;
+	border: 4px solid  #333;
 	border-radius: 20px;
 	font-family: 'Krona One', sans-serif;
 	font-size: .8em;
@@ -204,7 +205,8 @@ body#loginPage{
 
 body#signUpPage{
 	background-image: url('../images/fondo.jpg');
-	background-size: 100% 100vh;
+	background-size: 100vw 100%;
+	overflow-x: hidden;
 }
 
 .signUp{
@@ -226,7 +228,9 @@ body#signUpPage{
 	font-size: 2em;
 	text-shadow: 2px 2px #ccc;
 }
-
+.registroMain{
+	width: 100%;
+}
 .registroMain__form{
 	width: 100vw;
 	display: flex;
@@ -236,15 +240,19 @@ body#signUpPage{
 	text-shadow: 2px 2px black;
 }
 
+.registroMain__form input{
+	width: 80%;
+}
+
 .form__data{
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	
 	justify-content: space-around;
 }
 
 .registroMain__form__item{
-	width: 40%;
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -269,6 +277,7 @@ body#signUpPage{
 	text-decoration: none;
 	font-size: 1.2em;
 	transition: 1s;
+	margin-bottom: 10px;
 
 }
 
@@ -323,11 +332,50 @@ body#registroTorneoPage{
 
 .registroTorneoMain__form{
 	margin: 50px;
+		display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .registroTorneoMain__form__item {
 	margin: 25px;
 	text-shadow: 2px 2px black;
+}
+
+.registroTorneoMain__form__item label{
+	font-size: 1.5em;
+}
+
+
+.registroTorneoMain__form__item select, input{
+	padding: 10px;
+	font-size: 1em;
+	font-family: 'Krona One', sans-serif;
+	border: none;
+	color: white;
+	background: #333;
+	margin-left: 10px;
+}
+
+.registroTorneoMain__form__item .categoriaLabel{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.registroTorneoMain__form__item .categoria input[type="radio"]{
+ 	display:inline-block;
+    width:16px;
+    height:16px;
+    /*margin:-1px 4px 0 0;*/
+      margin: 2px 20px auto;
+  padding: 0 10px;
+}
+
+.registroTorneoMain__form .form__btn{
+	text-align: center;	
 }
 
 .labelCategoria{
@@ -355,21 +403,68 @@ body#listadoTorneosPage{
 	align-items: center;
 }
 
+.listadoTorneos h1{
+	text-shadow: 2px 2px #333;
+}
+
+.listadoTorneos__main .enlaces{
+	display: flex;
+	width: 100vw;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.listadoTorneos__main .enlaces .form__btn{
+	width: 200px;
+	text-align: center;
+
+}
+.listadoTorneos__main .enlaces .form__btn:last-child{
+	font-size: 1.1em; 	
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+.listadoTorneos__main .enlaces a{
+	text-decoration: none;
+}
+
+.listadoTorneos__main__table{
+
+	text-shadow: 2px 2px #333;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(51, 51, 51, 0.8);
+
+}
+
+.listadoTorneos__main__table th{
+	padding-top: 20px;
+}
+
+.listadoTorneos__main__table tr, td{
+	padding: 20px;	
+	z-index: 1;
+}
+
 .listadoTorneos__main__table{
 	text-align: center;
 }
 
 
+
+
 /*Admin Panel*/
 
 body#adminPanelPage{
+	height: 100%;
 	background-image: url('../images/fondo.jpg');
-	background-size: 100% 100vh;
+	overflow-x: hidden;
+
 }
 
 .adminPanel{
 	width: 100%;
-	height: 100vh	;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -378,9 +473,65 @@ body#adminPanelPage{
 }
 
 .adminPanel__main__table{
+  text-align: center;
+  text-shadow: 2px 2px #333;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(51, 51, 51, 0.8);
+}
+
+.adminPanel__main__table th{
+	padding-top: 20px;
+}
+
+.button-panel{
+	width: 150px;
+	padding: 12px;
+	border: 4px solid  #333;
+	border-radius: 20px;
+	font-family: 'Krona One', sans-serif;
+	font-size: .8em;
+	background: white;
+	color: #333;
+	text-decoration: none;
+	text-shadow: none;
+	transition: .7s;
+}
+
+.button-panel:hover{
+	cursor: pointer;
+	background: #333;
+	color: white;
+	transition: .7s;
+}
+
+.adminPanel .enlaces{
+	margin-top: 50px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
 	text-align: center;
 }
 
+.adminPanel .enlaces a{
+	margin: 0px 10px;
+	margin-bottom: 15px;
+}
+
+/*Ver Torneos*/
+
+body#verTorneosPage{
+	height: 100vh;
+	width: 100%;	
+	background-image: url('../images/fondo.jpg');
+	overflow-x: hidden;
+}
+
+.verTorneosEnlaces a{
+	margin: 0px 10px;
+	margin-bottom: 15px;
+}
 /*Ver Detalles*/
 
 body#verDetallesPage{
@@ -404,10 +555,13 @@ body#verDetallesPage{
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 15px;
+	  background: rgba(51, 51, 51, 0.8);
+	  width: 100%;
 }
 
 .verDetalles__main label{
 	margin: 15px;
+	font-size: 1.3em;
 }
 
 .verDetalles__main__enlaces{
@@ -416,7 +570,9 @@ body#verDetallesPage{
 	width: 80%;
 	justify-content: space-around;
 }
-
+.verDetalles__main__enlaces form{
+	margin: 12px;
+}
 /*Editar Registro*/
 
 #editarRegistroPage{
@@ -432,6 +588,32 @@ body#verDetallesPage{
 	justify-content: center;
 	align-items: center;
 	text-shadow: 2px 2px black;
+}
+
+.modificarBtn{
+	margin:10px;
+}
+
+.enlacesEditar{
+	text-shadow: none;
+	margin: 12px;
+}
+
+
+.enlacesEditar, .modificarBtn{
+	display: flex;
+	justify-content: center;
+}
+.enlaces a.form__btn{
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 15px;
+	transition: .7s;
+}
+.enlaces a.form__btn:hover{
+	background: #333;
+	color: white;
+	transition: .7s;
 }
 
 /*Crear Torneo*/
@@ -452,6 +634,30 @@ body#crearTorneoPage{
 	text-shadow: 2px 2px black;
 }
 
+.crearTorneo h2{
+	text-align: center;
+}
+
+.crearTorneo__main .form__btn{
+	margin-top: 10px;	
+}
+
+.crearTorneo__main label{
+	font-size: 1.2em;
+}
+
+.crearTorneo__main .enlaces{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.crearTorneo__main .enlaces a{
+	text-decoration: none;
+	text-shadow: none;
+	text-align: center;
+}
+
 .crearTorneo__main__form{
 	display: flex;
 	flex-direction: column;
@@ -468,3 +674,4 @@ body#crearTorneoPage{
 	justify-content: space-around;
 	margin: 10px;
 }
+

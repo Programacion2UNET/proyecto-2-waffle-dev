@@ -29,7 +29,12 @@
                   <input class="form__input" type="date" name="fechaTorneo" id="fecha_creacion" min="2018-03-01"  required />
                 </div>
                 <button class="form__btn" type="submit" id="submit">Crear</button>
+
               </form>
+
+              <div class="enlaces">
+                <a href="adminPanel.php" class="form__btn">Regresar</a>
+              </div>
           </main>
 
           <div class="crearTorneo__footer">

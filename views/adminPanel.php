@@ -76,20 +76,20 @@ require_once('../php/obtenerTorneos.php');
 			  			</td>
 			  			<td>
 			  			  <form action="verDetalles.php" method="POST">
-		                     <input class="id-for" type="hidden" name="id-for" id="id-for" value=<?php echo $i ?> /> 
-		                     <button type="submit"> Ver detalles</button>
+		                     <input class="id-for " type="hidden" name="id-for" id="id-for" value=<?php echo $i ?> /> 
+		                     <button type="submit"  class="button-panel"> Ver detalles</button>
 		                  </form>
 			  			</td>
 			  			<td>
 			  				<form action="editarRegistro.php" method="POST">
 					        	<input class="id-for" type="hidden" name="id-for" id="id-for" value=<?= $i	; ?> /> 
-					        	<button type="submit">Editar</button>
+					        	<button type="submit" class="button-panel">Editar</button>
 					      </form>
 			  			</td>
 			  			<td>
 			  			  <form action="../php/borrarRegistro.php" method="POST">
 					       	<input class="id-for" type="hidden" name="id-for" id="id-for" value=<?= $registros[$i]->GetId(); ?> /> 
-					       	<button type="submit">Borrar</button>
+					       	<button type="submit" class="button-panel">Borrar</button>
 					      </form>
 			  			</td>
 			  		</tr>
@@ -101,9 +101,9 @@ require_once('../php/obtenerTorneos.php');
 
 
 			<div class="enlaces">
-				<a href="verTorneos.php">Ver Torneos</a>
-				<a href="crearTorneo.php">Crear Torneo</a>
-				<a href="../index.html">Salir</a>
+				<a href="verTorneos.php" class="button-panel">Ver Torneos</a>
+				<a href="crearTorneo.php" class="button-panel">Crear Torneo</a>
+				<a href="../index.html" class="button-panel">Salir</a>
 			</div>
 		</main>
 

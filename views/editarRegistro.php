@@ -19,14 +19,14 @@ $idRegistro = $_POST['id-for'];
 </head>
 <body id="editarRegistroPage">
 	
-	<div class="editarRegistro">
+	<div class="registroTorneo">
 			
 		<h1 class="editarRegistro__titulo">Editar registro #<?= $_POST['id-for']+1?></h1>
 
-		<main class="editarRegistro__main">
+		<main class="registroTorneoMain">
 	
 			<form action="../php/editarRegistro.php" method="POST" class="editarRegistro__main__form">
-				<div class="editarRegistro__main__form__item">
+				<div class="registroTorneoMain__form__item">
 					<label for="torneo">Seleccione un Torneo</label>
 					<select name="nombreTorneo">
 					
@@ -53,13 +53,13 @@ $idRegistro = $_POST['id-for'];
 						?>
 					</select>
 				</div>
-				<div class="editarRegistro__main__form__item">
+				<div class="registroTorneoMain__form__item">
 					<label for="cant_participantes">Cantidad de Participantes</label>
 					<input type="number" id="cantParticipantes" placeholder="Cantidad de Participantes" value="<?php echo $registros[$idRegistro]->GetCantParticipantes()?>" min="5" name="cantParticipantes">
 				</div>
-				<div class="editarRegistro__main__form__item">
+				<div class="registroTorneoMain__form__item"">
 
-					<label for="categoria">Categoria</label>
+					<label for="categoria" class="categoriaLabel">Categoria</label>
 
 					<div class="categoria">
 					  <?php 
@@ -102,8 +102,13 @@ $idRegistro = $_POST['id-for'];
 				 
 				 <input type="hidden" name="idRegistro" value="<?php echo $registros[$idRegistro]->GetId()?>">
 
-				 <button class="form__btn" type="submit" id="submit">Modificar</button>
+				 <div class="modificarBtn">
+				 	<button class="form__btn " type="submit" id="submit">Modificar</button>
+				 </div>
 			</form>
+			<div class="enlaces enlacesEditar">
+                <a href="adminPanel.php" class="form__btn">Regresar</a>
+              </div>
 
 		</main>
 

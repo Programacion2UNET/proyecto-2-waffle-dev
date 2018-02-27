@@ -86,8 +86,8 @@ $_SESSION['idEquipo'] = $idEquipo;
 			  ?>
 			</table>
 			<div class="enlaces">
-				<a href="registroTorneo.php">Registrar equipo en otro Torneo</a>
-				<a href="../index.html">Salir</a>
+				<a href="registroTorneo.php" class="form__btn">Registrar equipo en otro Torneo</a>
+				<a href="../index.html" class="form__btn">Salir</a>
 			</div>
 		</main>
 

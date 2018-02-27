@@ -71,13 +71,17 @@ $idRegistro = $_POST['id-for'];
 			<div class="verDetalles__main__enlaces">
 				 <form action="editarRegistro.php" method="POST">
 			        <input class="id-for" type="hidden" name="id-for" id="id-for" value=<?= $idRegistro; ?> /> 
-			        <button type="submit">Editar</button>
+			        <button type="submit" class="button-panel">Editar</button>
 			      </form>
 			      <form action="../php/borrarRegistro.php" method="POST">
 			        <input class="id-for" type="hidden" name="id-for" id="id-for" value=<?= $registros[$idRegistro]->GetId(); ?> /> 
-			        <button type="submit">Borrar</button>
+			        <button type="submit" class="button-panel">Borrar</button>
 			      </form>
 			</div>
+
+			<div class="enlaces enlacesEditar">
+                <a href="adminPanel.php" class="form__btn">Regresar</a>
+              </div>
 
 		</main>
 

@@ -52,7 +52,7 @@ else
 				</div>
 				<div class="registroTorneoMain__form__item">
 
-					<label for="categoria">Categoria</label>
+					<label for="categoria" class="categoriaLabel">Categoria</label>
 
 					<div class="categoria">
 					  <input type="radio" name="categoria" value="principiante" checked> Principiante<br>
