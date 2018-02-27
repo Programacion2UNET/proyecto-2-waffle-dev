@@ -1,6 +1,6 @@
 <?php
 
-include('../torneo.php');
+include('../classes/torneo.php');
 
 
 require_once('conexionDB.php');

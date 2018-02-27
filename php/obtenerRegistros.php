@@ -1,6 +1,6 @@
 <?php
 
-include('../registros.php');
+include('../classes/registros.php');
 
 
 require_once('conexionDB.php');

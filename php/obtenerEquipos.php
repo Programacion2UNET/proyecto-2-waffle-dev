@@ -1,6 +1,6 @@
 <?php
 
-include('../equipo.php');
+include('../classes/equipo.php');
 
 session_start();
 

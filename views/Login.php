@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Login - CoD Superleague</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta charset="utf-8">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="shortcut icon" type="image/png" href="../images/icon.png"/>
-  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
-</head>
+<?php
+require_once('cabecera.php');
+?>
 <body id="loginPage">
 
       <div class="login">
@@ -33,7 +26,7 @@
                   <button class="form__btn" type="submit" id="submit">Iniciar Sesión</button>
               </form>
                 <div class="loginMain__enlaces">
-                  <a class="registro" href="SignUp.html">¿No tienes cuenta? Registrate </a>
+                  <a class="registro" href="SignUp.php">¿No tienes cuenta? Registrate </a>
                 </div>
             </main>
       </div>
