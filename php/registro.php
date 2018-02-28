@@ -7,8 +7,15 @@ $direccion = $_POST['direccion'];
 $email = $_POST['correo'];
 $web = $_POST['sitio_web'];
 $user= $_POST["user"];
+//$password= base64_encode($_POST["password"]);
 $password= $_POST["password"];
 $admin=0;
+
+if($direccion == "")
+    $direccion = 'Desconocida';
+
+if($web == '')
+    $web = 'Desconocida';
 
 
 require_once('conexionDB.php');

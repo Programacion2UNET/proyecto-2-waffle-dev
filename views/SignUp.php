@@ -5,7 +5,7 @@ require_once('cabecera.php');
 
 	<div class="signUp">
          <header>
-            <h1 class="titulo_registro">Call of Duty Superleague</h1>
+            <h1 class="titulo_registro">E-Sports Superleague</h1>
             <h2 class="subtitulo_registro">Registro</h2>
         </header>
 

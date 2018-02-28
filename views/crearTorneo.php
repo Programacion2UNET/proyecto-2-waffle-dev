@@ -5,7 +5,7 @@ require_once('cabecera.php');
 
       <div class="crearTorneo">
           <header>
-            <h1 class="titulo">Call of Duty Superleague</h1>
+            <h1 class="titulo">E-Sports Superleague</h1>
             <h2 class="subtitulo">Crear Torneo</h2>
           </header>
 

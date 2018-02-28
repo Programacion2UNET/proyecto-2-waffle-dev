@@ -3,8 +3,11 @@
 session_start();
 
 $username=  $_POST["user"];
+//$password= base64_encode($_POST["password"]);
 $password= $_POST["password"];
+
 $admin;
+
 
 require_once('conexionDB.php');
 
@@ -23,6 +26,8 @@ $id=$filas[0][0];
 
 $_SESSION['id-user'] = $id;
 //$_SESSION['id-u']= $filas[0][0];
+
+$error = 1;
 
 if($filas && $filas[0][3] == 0)
 	header('location:../views/registroTorneo.php?');

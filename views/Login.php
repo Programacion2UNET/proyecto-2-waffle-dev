@@ -1,13 +1,22 @@
 <?php
 require_once('cabecera.php');
+
+if(isset($_GET['error']))
+  $error = $_GET['error'];
 ?>
 <body id="loginPage">
 
       <div class="login">
           <header>
-            <h1 class="titulo">Call of Duty Superleague</h1>
+            <h1 class="titulo">E-Sports Superleague</h1>
             <h2 class="subtitulo">Login</h2>
           </header>
+          
+          <?php
+            if(isset($error))
+              if($error == 1)
+                 echo '<h3>Error al realizar el Login</h3>';
+          ?>
 
           <main class="loginMain">
               <form class="loginMain__form" action="../php/login.php" method="POST">

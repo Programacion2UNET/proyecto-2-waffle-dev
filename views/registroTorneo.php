@@ -16,6 +16,7 @@ else
 if(isset($_SESSION['id-user']))
 	$idEquipo = $_SESSION['id-user'];
 
+$fecha = date("Y/m/d");
 ?>
 
 <?php
@@ -36,10 +37,12 @@ require_once('cabecera.php');
 						<?php
 
 							for($i = 0; $i<count($torneos); $i++){
-								?>
+								
+								if(strtotime($fecha) < strtotime($torneos[$i]->GetFecha())){
+									?>
 								  <option value='<?php  echo $i+1; ?>'><?php echo $torneos[$i]->GetNombre(); ?></option>
 								<?php
-
+								}
 							}
 						?>
 					</select>
@@ -63,7 +66,12 @@ require_once('cabecera.php');
 				 <input type="hidden" name="id_equipo" value="<?php echo $idEquipo?>">
 
 				 <button class="form__btn" type="submit" id="submit">Registrar</button>
+				 <div class="enlaces enlaceSalir">
+					<a href="../index.html" class="form__btn">Salir</a>
+				 </div>	
 			</form>
+
+			
 		</main>
 
 		<div class="registroTorneo__footer">

@@ -49,6 +49,10 @@ body#registroTorneoPage{
 	margin-bottom: 10px;
 }
 
+input.cantParticipantes{
+	width: 300px;
+}
+
 .registroTorneoMain__form__item .categoria input[type="radio"]{
  	display:inline-block;
     width:16px;
@@ -70,4 +74,12 @@ body#registroTorneoPage{
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
+}
+
+.enlaceSalir{
+	margin-top: 40px;
+}
+
+.enlaceSalir a{
+	padding: 10px 25px;
 }

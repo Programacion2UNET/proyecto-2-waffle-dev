@@ -4,6 +4,11 @@ require_once('../php/obtenerTorneos.php');
 
 <?php
 require_once('cabecera.php');
+
+
+$fecha = date("Y/m/d");
+//echo $fecha;
+
 ?>
 <body id="verTorneosPage">
 	
@@ -30,7 +35,8 @@ require_once('cabecera.php');
 			  			<td>
 			  				<?php
 			  					echo $torneos[$i]->GetFecha();
-			  				
+			  					if(strtotime($fecha) > strtotime($torneos[$i]->GetFecha()))
+			  						echo ' (Ya se jugó)'
 			  				?>
 			  			</td>
 			  		</tr>
